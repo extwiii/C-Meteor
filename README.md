@@ -1,13 +1,15 @@
 # C-Meteor
 Coursera - Goldsmiths, University of London - meteor.js 
 
-
+- Todos
+- Textcircle Editor
+- Portfolio
 
 ## Links to GitHub Repository (Master Branch)
 
 
 ## Installation
-
+Please download or clone project file. open which file you would like to use with terminal. You can start easy with (meteor). then open your localhost to see the actual program.
 
 ## Tools / Techniques
 
