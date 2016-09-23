@@ -1,0 +1,51 @@
+<template name="post">
+<header id="header">
+  <div id="head" class="parallax" parallax-speed="1">
+    {{background post.titleBackground post.featuredImage}}
+
+    <h1 id="logo" class="text-center">
+  			<img class="img-circle" src="/johndoe.jpg" alt="">
+  			<span class="title">John Doe's Blog</span>
+  			<span class="tagline">A creative man is motivated by the desire to achieve, not by the desire to beat others.</span>
+  		</h1>
+  </div>
+
+</header>
+
+<main id="main">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-md-offset-9">
+        <ol class="breadcrumb">
+          <li><a href="/">Home</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li class="active">{{post.title}}</li>
+        </ol>
+      </div>
+    </div>
+    <div class="row topspace">
+      <div class="col-sm-8 col-sm-offset-2">
+
+        <article class="post">
+          <header class="entry-header">
+            <div class="entry-meta">
+              <span class="posted-on"><time class="entry-date published" date="2013-06-17">{{formatTime post.createdAt}}</time></span>
+            </div>
+            <h1 class="entry-title">{{post.title}}</h1>
+          </header>
+          <div class="entry-content">
+            {{{post.body}}}
+          </div>
+        </article>
+        <!-- #post-## -->
+
+      </div>
+    </div>
+
+      <div class="clearfix"></div>
+
+    </div>
+    <!-- /container -->
+
+</main></template>
