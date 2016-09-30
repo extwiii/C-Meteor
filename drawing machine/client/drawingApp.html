@@ -1,0 +1,58 @@
+<head>
+  <title>1-wall</title>
+</head>
+
+<body>
+  {{> wall}}
+</body>
+
+<template name="wall">
+
+  <h1>{{title}}</h1>
+  <div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+      <h3>Colors</h3>
+    </div>
+    <button class='btn btn-width red'>Red</button>
+    <button class='btn btn-width pink'>Pink</button>
+    <button class='btn btn-width purple'>Purple</button>
+    <button class='btn btn-width aqua'>Aqua</button>
+    <button class='btn btn-width teal'>Teal</button>
+    <button class='btn btn-width blue'>Blue</button>
+    <button class='btn btn-width navy'>Navy</button>
+    <button class='btn btn-width lime'>Lime</button>
+    <button class='btn btn-width green'>Green</button>
+    <button class='btn btn-width olive'>Olive</button>
+    <button class='btn btn-width black'>Black</button>
+    <button class='btn btn-width gray'>Gray</button>
+    <button class='btn btn-width white'>White</button>
+    <button class='btn btn-width brown'>Brown</button>
+    <button class='btn btn-width yellow'>Yellow</button>
+    <button class='btn btn-width gold'>Gold</button>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+      <h3>Drawing Methods</h3>
+    </div>
+    <button class='btn btn-primary btn-width thicker'>Thicker</button>
+    <button class='btn btn-primary btn-width thinner'>Thinner</button>
+    <button class="btn btn-primary btn-width line">Line</button>
+    <button class="btn btn-primary btn-width circle">Circle</button>
+  </div>
+  
+  <div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+      <h3>Save as png</h3>
+    </div>
+    <button class="btn btn-success btn-width save">Save</button>
+    <button class='btn btn-danger btn-width clear'>Clear</button>
+  </div>
+
+{{> canvas}}
+
+</template>
+
+<template name="canvas">
+  <div id='canvas'></div>
+</template>
