@@ -5,8 +5,10 @@ Coursera - Goldsmiths, University of London - meteor.js
 - Textcircle Editor
 - Portfolio
 - Siteace
-- Image share
-- Instant message
+- Image Share
+- Instant Message
+- Drawing Machine
+- Song Data Visualization
 
 ## Links to GitHub Repository (Master Branch)
 
