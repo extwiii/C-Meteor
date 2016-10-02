@@ -1,0 +1,19 @@
+<template name="navbar">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="/">MusicMachine</a>
+      
+      <ul class="nav navbar-nav">
+	<li>
+	  <a href="/playground"><span class="glyphicon glyphicon-music" aria-hidden="true"></span>
+	    Playground
+	  </a>	  
+	</li>	
+      </ul>
+
+      <p class="navbar-text navbar-right">
+	<input type="checkbox" name="dac" data-toggle="toggle" data-on="<i class='fa fa-volume-up'></i> DAC:on&nbsp;" data-onstyle='warning' data-off="<i class='fa fa-volume-off'></i> DAC:off&nbsp;">
+      </p>
+    </div>
+  </nav>
+</template>

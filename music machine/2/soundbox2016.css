@@ -1,0 +1,14 @@
+
+
+body{
+background:url("/pic2.jpg");
+background-size:cover;
+
+
+}
+
+.landing{
+  background:url("/pic2.jpg");
+  color:  gray-dark;
+  text-align: center;
+}

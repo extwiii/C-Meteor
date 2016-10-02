@@ -1,0 +1,146 @@
+<template name="playground">
+
+<br><br><br>
+<!-- Remember - if you want to control functions globaly, don't declare them as var. Just name them. -->
+<h1 class="text-center">Lets make some music!</h1>
+<h6 class="text-center">If there is an error while rendering, move one of the sliders. That should start the app properly.</h6>
+<br><br><br>
+<div class="row">
+	<div class="col-md-1 col-sm-2 col-xs-5">Drums</div>
+	<div class="col-md-3 col-sm-4 col-xs-7">
+		<button class="btn btn-success myButton1">ON</button>
+		<button class="btn btn-danger myButton2">OFF</button>
+		<span class="glyphicon glyphicon-play-circle icon1" aria-hidden="true"></span><br>
+	</div>
+	<div class="col-md-2 col-sm-6 col-xs-12">
+		Speed: {{sliderVal2}}<div id="slider2"></div>
+		Volume: {{sliderVal3}}<div id="slider3"></div><br>
+	</div>
+
+
+	<div class="col-md-1 col-sm-2 col-xs-5">Bass</div>
+	<div class="col-md-3 col-sm-4 col-xs-7">
+		<button class="btn btn-success myButton3">ON</button>
+		<button class="btn btn-danger myButton4">OFF</button>
+		<span class="glyphicon glyphicon-play-circle icon2" aria-hidden="true"></span><br>
+	</div>
+	<div class="col-md-2 col-sm-6 col-xs-12">
+		Speed: {{sliderVal4}}<div id="slider4"></div>
+		Volume: {{sliderVal5}}<div id="slider5"></div><br>
+	</div>
+
+	<div class="col-md-1 col-sm-2 col-xs-5">Arp</div>
+	<div class="col-md-3 col-sm-4 col-xs-7">
+		<button class="btn btn-success myButton5">ON</button>
+		 <button class="btn btn-danger myButton6">OFF</button>
+		 <span class="glyphicon glyphicon-play-circle icon3" aria-hidden="true"></span><br>
+ 	</div>
+ 	<div class="col-md-2 col-sm-6 col-xs-12">
+		Speed: {{sliderVal6}}<div id="slider6"></div>
+		Volume: {{sliderVal7}}<div id="slider7"></div><br>
+	</div>
+
+ 	<div class="col-md-1 col-sm-2 col-xs-5">Chords</div>
+ 	<div class="col-md-3 col-sm-4 col-xs-7">
+ 		<button class="btn btn-success myButton7">ON</button>
+		<button class="btn btn-danger myButton8">OFF</button>
+		<span class="glyphicon glyphicon-play-circle icon4" aria-hidden="true"></span><br>
+	</div>
+	<div class="col-md-2 col-sm-6 col-xs-12">
+		Speed: {{sliderVal8}}<div id="slider8"></div>
+		Volume: {{sliderVal9}}<div id="slider9"></div><br>
+	</div>
+
+	<div class="col-md-1 col-sm-2 col-xs-5">Drums</div>
+ 	<div class="col-md-3 col-sm-4 col-xs-7">
+ 		<button class="btn btn-success myButton9">ON</button>
+		<button class="btn btn-danger myButton10">OFF</button>
+		<span class="glyphicon glyphicon-play-circle icon5" aria-hidden="true"></span><br>
+	</div>
+	<div class="col-md-2 col-sm-6 col-xs-12">
+		Speed: {{sliderVal10}}<div id="slider10"></div>
+		Volume: {{sliderVal11}}<div id="slider11"></div><br>
+	</div>
+
+	<div class="col-md-1 col-sm-2 col-xs-5">Arp</div>
+ 	<div class="col-md-3 col-sm-4 col-xs-7">
+ 		<button class="btn btn-success myButton11">ON</button>
+		<button class="btn btn-danger myButton12">OFF</button>
+		<span class="glyphicon glyphicon-play-circle icon6" aria-hidden="true"></span><br>
+	</div>
+	<div class="col-md-2 col-sm-6 col-xs-12">
+		Speed: {{sliderVal12}}<div id="slider12"></div>
+		Volume: {{sliderVal13}}<div id="slider13"></div><br>
+	</div>
+
+	<div class="col-md-1 col-sm-2 col-xs-5">BassDrum</div>
+ 	<div class="col-md-3 col-sm-4 col-xs-7">
+ 		<button class="btn btn-success myButton13">ON</button>
+		<button class="btn btn-danger myButton14">OFF</button>
+		<span class="glyphicon glyphicon-play-circle icon7" aria-hidden="true"></span><br>
+	</div>
+	<div class="col-md-2 col-sm-6 col-xs-12">
+		Speed: {{sliderVal14}}<div id="slider14"></div>
+		Volume: {{sliderVal15}}<div id="slider15"></div><br>
+	</div>
+
+	<div class="col-md-1 col-sm-2 col-xs-5">Cymbal</div>
+ 	<div class="col-md-3 col-sm-4 col-xs-7">
+ 		<button class="btn btn-success myButton15">ON</button>
+		<button class="btn btn-danger myButton16">OFF</button>
+		<span class="glyphicon glyphicon-play-circle icon8" aria-hidden="true"></span><br>
+	</div>
+	<div class="col-md-2 col-sm-6 col-xs-12">
+		Speed: {{sliderVal16}}<div id="slider16"></div>
+		Volume: {{sliderVal17}}<div id="slider17"></div><br>
+	</div>
+
+	<div class="col-md-1 col-sm-2 col-xs-5">Hihat</div>
+ 	<div class="col-md-3 col-sm-4 col-xs-7">
+ 		<button class="btn btn-success myButton17">ON</button>
+		<button class="btn btn-danger myButton18">OFF</button>
+		<span class="glyphicon glyphicon-play-circle icon9" aria-hidden="true"></span><br>
+	</div>
+	<div class="col-md-2 col-sm-6 col-xs-12">
+		Speed: {{sliderVal18}}<div id="slider18"></div>
+		Volume: {{sliderVal19}}<div id="slider19"></div><br>
+	</div>
+
+	<div class="col-md-1 col-sm-2 col-xs-5">SlowDrum</div>
+ 	<div class="col-md-3 col-sm-4 col-xs-7">
+ 		<button class="btn btn-success myButton19">ON</button>
+		<button class="btn btn-danger myButton20">OFF</button>
+		<span class="glyphicon glyphicon-play-circle icon10" aria-hidden="true"></span><br>
+	</div>
+	<div class="col-md-2 col-sm-6 col-xs-12">
+		Speed: {{sliderVal20}}<div id="slider20"></div>
+		Volume: {{sliderVal21}}<div id="slider21"></div><br>
+	</div>
+
+	<div class="col-md-1 col-sm-2 col-xs-5">SnareDrum</div>
+ 	<div class="col-md-3 col-sm-4 col-xs-7">
+ 		<button class="btn btn-success myButton21">ON</button>
+		<button class="btn btn-danger myButton22">OFF</button>
+		<span class="glyphicon glyphicon-play-circle icon11" aria-hidden="true"></span><br>
+	</div>
+	<div class="col-md-2 col-sm-6 col-xs-12">
+		Speed: {{sliderVal22}}<div id="slider22"></div>
+		Volume: {{sliderVal23}}<div id="slider23"></div><br>
+	</div>
+
+	<div class="col-md-1 col-sm-2 col-xs-5">Vibes</div>
+ 	<div class="col-md-3 col-sm-4 col-xs-7">
+ 		<button class="btn btn-success myButton23">ON</button>
+		<button class="btn btn-danger myButton24">OFF</button>
+		<span class="glyphicon glyphicon-play-circle icon12" aria-hidden="true"></span><br>
+	</div>
+	<div class="col-md-2 col-sm-6 col-xs-12">
+		Speed: {{sliderVal24}}<div id="slider24"></div>
+		Volume: {{sliderVal25}}<div id="slider25"></div><br>
+	</div>
+
+</div>
+ <h2>{{drums}} {{bass}} {{arp}} {{chords}} {{drums2}} {{arp2}} {{bassDrum}} {{cymbal}}  {{hihat}} {{slowdrum}} {{snaredrum}} {{vibes}}</h2>
+
+<br>
+</template>
