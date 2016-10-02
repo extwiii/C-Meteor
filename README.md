@@ -9,6 +9,7 @@ Coursera - Goldsmiths, University of London - meteor.js
 - Instant Message
 - Drawing Machine
 - Song Data Visualization
+- Music Machine
 
 ## Links to GitHub Repository (Master Branch)
 
